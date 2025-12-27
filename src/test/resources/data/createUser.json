@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Prashant",
+    "email": "prashant01@test.com",
+    "gender": "male",
+    "status": "active"
+  },
+  {
+    "name": "Riya",
+    "email": "riya88@test.com",
+    "gender": "female",
+    "status": "active"
+  },
+  {
+    "name": "Rahul",
+    "email": "rahul500@test.com",
+    "gender": "male",
+    "status": "inactive"
+  }
+]
+
