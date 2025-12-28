@@ -10,7 +10,7 @@ Feature: User API Testing
 
     Examples:
       | name  | email         | gender | status   |
-      | test4 | pra4@test.com | male   | inactive |
+      | test5 | pra5@test.com | male   | inactive |
 
   @Smoke
   @AllureId(101)
@@ -19,7 +19,7 @@ Feature: User API Testing
     Given I have created new user
     When I send GET request for that user
     Then the response status code should be 200
-    And response body should contain correct "Test User3", "testuser3@gmail.com"
+    And response body should contain correct "Test User4", "testuser4@gmail.com"
 
   @AllureId(101)
   @Severity(TRIVIAL)
@@ -29,7 +29,7 @@ Feature: User API Testing
     And the update payload is:
     """
     {
-      "name": "NewUserName"
+      "name": "NewUserName2"
     }
     """
     When I send a PUT request to "/users/{id}"
