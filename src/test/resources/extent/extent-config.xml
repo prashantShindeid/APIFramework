@@ -1,0 +1,10 @@
+<extentreports>
+    <configuration>
+        <reportName>API Automation Report</reportName>
+        <documentTitle>Rest Assured + Cucumber Report</documentTitle>
+        <theme>dark</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>HTTPS</protocol>
+        <timelineEnabled>true</timelineEnabled>
+    </configuration>
+</extentreports>

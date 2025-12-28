@@ -14,7 +14,7 @@ public class Base {
 
     protected Response post(String endpoint, Object payload){
         return RestAssured.given().log().all()
-                .header("Authorization", "Bearer " + TOKEN)  // 🔥 Required
+                .header("Authorization", "Bearer " + TOKEN)
                 .contentType(ContentType.JSON)
                 .body(payload)
                 .post(endpoint)
@@ -26,5 +26,21 @@ public class Base {
                 .header("Authorization", "Bearer " + TOKEN)
                 .get(endpoint)
                 .then().extract().response();
+    }
+    protected Response put(String endpoint ,Object payload){
+        return RestAssured.given().log().all()
+                .header("Authorization", "Bearer " + TOKEN)
+                .contentType(ContentType.JSON)
+                .body(payload)
+                .when()
+                .put(endpoint)
+                .then().log().all().extract().response();
+    }
+    protected Response delete(String endpoint){
+        return RestAssured.given().log().all()
+                .header("Authorization", "Bearer " + TOKEN)
+                .when()
+                .delete(endpoint)
+                .then().log().all().extract().response();
     }
 }
